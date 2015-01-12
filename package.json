@@ -1,0 +1,23 @@
+{
+  "name": "leaflet-shape-markers",
+    "version": "0.0.0",
+    "description": "Shape markers of fixed size for point symbols",
+    "keywords": ["Leaflet", "GIS", "Esri"],
+    "main": "leaflet-shape-markers.js",
+    "author": "Rachel Nehmer <rnehmer@esri.com>",
+    "contributors": [
+      "Rachel Nehmer <rnehmer@esri.com>"
+      ],
+    "scripts": {},
+    "dependencies": {
+      "leaflet": "*"
+    },
+    "devDependencies": {
+      "grunt": "^0.4.5",
+      "grunt-contrib-jshint": "^0.10.0",
+      "grunt-contrib-uglify": "^0.5.1",
+      "grunt-contrib-watch": "^0.6.1"
+    },
+    "license": "Apache",
+    "readmeFilename": "README.md"
+}
