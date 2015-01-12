@@ -16,8 +16,3 @@ node_modules
 
 # Grunt
 .grunt/
-
-
-# Built Files
-dist/**/*.js
-dist/**/*.map
