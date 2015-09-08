@@ -10,9 +10,15 @@ Icon
 *.sublime-project
 .idea/*
 
-
 # Node
 node_modules
 
 # Grunt
 .grunt/
+
+# compiled code
+dist/*
+
+# Debugging Files
+debug/*
+!debug/sample.html
