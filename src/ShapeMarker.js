@@ -1,10 +1,16 @@
-L.ShapeMarker = L.Path.extend({
+import L from 'leaflet'
+
+export var ShapeMarker = L.Path.extend({
 
   initialize: function(latlng, size, options){
     L.setOptions(this, options);
     this._size = size;
     this._latlng = L.latLng(latlng);
+    this._svgCanvasIncludes();
+  },
 
+  _svgCanvasIncludes: function(){
+    //implement in sub class
   },
 
   _project: function(){
