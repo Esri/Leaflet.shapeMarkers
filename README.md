@@ -2,15 +2,13 @@
 
 [Leaflet] (http://leafletjs.com) plugin to draw simple shape markers of fixed width.
 
-**Leaflet.shapeMarkers is currently in development and is targeted for Leaflet 1.0.0**
+**Leaflet.shapeMarkers targets Leaflet 1.0.x**
 
 ### Dependencies
 
 * [Leaflet](http://leaflet.com) version 1.0.0 or higher is required.
 
 ### Development Instructions
-
-Make sure you have the [Grunt CLI](http://gruntjs.com/getting-started) installed.
 
 1. [Fork and clone Leaflet.shapeMarkers](https://help.github.com/articles/fork-a-repo)
 2. `cd` into the `Leaflet.shapeMarkers` folder
