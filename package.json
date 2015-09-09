@@ -1,27 +1,41 @@
 {
   "name": "leaflet-shape-markers",
-  "version": "1.0.0",
   "description": "Shape markers of fixed size for point symbols",
-  "keywords": ["Leaflet", "GIS", "Esri"],
-  "main": "leaflet-shape-markers.js",
+  "version": "1.0.0",
   "author": "Rachel Nehmer <rnehmer@esri.com>",
+  "bugs": {
+    "url": "https://github.com/Esri/Leaflet.shapeMarkers/issues"
+  },
   "contributors": [
-    "Rachel Nehmer <rnehmer@esri.com>"
+    "Rachel Nehmer <rnehmer@esri.com>",
+    "John Gravois <jgravois@esri.com>"
   ],
-  "scripts": {},
   "dependencies": {
     "leaflet": "^1.0.0-beta.1"
   },
-  "jsnext:main": "src/ShapeMarkers.js",
   "devDependencies": {
-    "uglify-js": "^2.4.23",
+    "gh-release": "^2.0.0",
     "mkdirp": "^0.5.1",
-    "rollup": "^0.10.0"
+    "rollup": "^0.10.0",
+    "uglify-js": "^2.4.23"
   },
-  "license": "Apache",
+  "homepage": "http://github.com/Esri/Leaflet.shapeMarkers",
+  "jsnext:main": "src/EsriLeaflet.js",
+  "jspm": {
+    "registry": "npm",
+    "format": "es6"
+  },
+  "keywords": ["Leaflet", "GIS", "Esri"],
+  "license": "Apache-2.0",
+  "main": "src/ShapeMarkers.js",
   "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Esri/Leaflet.shapeMarkers.git"
+  },
   "scripts": {
     "prebuild": "mkdirp dist",
-    "build": "./scripts/build.js"
+    "build": "./scripts/build.js",
+    "release": "./scripts/release.js"
   }
 }
