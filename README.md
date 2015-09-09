@@ -1,12 +1,43 @@
-# Leaflet.ShapeMarkers
+# Leaflet.shapeMarkers
 
 [Leaflet] (http://leafletjs.com) plugin to draw simple shape markers of fixed width.
 
-** Leaflet ShapeMarkers is currently in development and is targeted for Leaflet 1.0. **
+**Leaflet.shapeMarkers is currently in development and is targeted for Leaflet 1.0.0**
 
 ### Dependencies
 
-* [Leaflet](http://leaflet.com) version 1.0 or higher is required.
+* [Leaflet](http://leaflet.com) version 1.0.0 or higher is required.
+
+### Development Instructions
+
+Make sure you have the [Grunt CLI](http://gruntjs.com/getting-started) installed.
+
+1. [Fork and clone Leaflet.shapeMarkers](https://help.github.com/articles/fork-a-repo)
+2. `cd` into the `Leaflet.shapeMarkers` folder
+5. Install the dependencies with `npm install`
+5. run `npm run build` from the command line. This will create minified source.  afterward, you can run `npm test` to make sure everything is up to snuff.
+6. Make your changes and create a [pull request](https://help.github.com/articles/creating-a-pull-request)
+
+### Versioning
+
+For transparency into the release cycle and in striving to maintain backward compatibility, Esri Leaflet is maintained under the Semantic Versioning guidelines and will adhere to these rules whenever possible.
+
+Releases will be numbered with the following format:
+
+`<major>.<minor>.<patch>`
+
+And constructed with the following guidelines:
+
+* Breaking backward compatibility **bumps the major** while resetting minor and patch
+* New additions without breaking backward compatibility **bumps the minor** while resetting the patch
+* Bug fixes and misc changes **bumps only the patch**
+
+For more information on SemVer, please visit <http://semver.org/>.
+
+### Contributing
+
+Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/Esri/esri-leaflet-renderers/blob/master/CONTRIBUTING.md).
+
 
 ### Licensing
 Copyright 2015 Esri
@@ -23,7 +54,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-A copy of the license is available in the repository's [license.txt](https://raw.githubusercontent.com/Esri/Leaflet.ShapeMarkers/master/LICENSE) file.
+A copy of the license is available in the repository's [license.txt](https://raw.githubusercontent.com/Esri/Leaflet.shapeMarkers/master/LICENSE) file.
 
 [](Esri Tags: ArcGIS Web Mapping Leaflet)
 [](Esri Language: JavaScript)

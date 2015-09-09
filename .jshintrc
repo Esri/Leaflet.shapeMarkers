@@ -1,4 +1,5 @@
 {
+  "esnext": true,
   "maxparams": 5,
   "maxdepth": 5,
   "curly": true,
