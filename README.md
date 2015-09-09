@@ -21,9 +21,9 @@ L.ShapeMarkers.xMarker([45.5052, -122.6917], 50).addTo(map)
 
 1. [Fork and clone Leaflet.shapeMarkers](https://help.github.com/articles/fork-a-repo)
 2. `cd` into the `Leaflet.shapeMarkers` folder
-5. Install the dependencies with `npm install`
-5. run `npm run build` from the command line. This will create minified source.  afterward, you can run `npm test` to make sure everything is up to snuff.
-6. Make your changes and create a [pull request](https://help.github.com/articles/creating-a-pull-request)
+3. Install the dependencies with `npm install`
+4. run `npm run build` from the command line. This will create minified source.  afterward, you can run `npm test` to make sure everything is up to snuff.
+5. Make your changes and create a [pull request](https://help.github.com/articles/creating-a-pull-request)
 
 ### Versioning
 
