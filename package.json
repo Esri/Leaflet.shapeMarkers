@@ -20,7 +20,7 @@
     "uglify-js": "^2.4.23"
   },
   "homepage": "http://github.com/Esri/Leaflet.shapeMarkers",
-  "jsnext:main": "src/EsriLeaflet.js",
+  "jsnext:main": "src/ShapeMarkers.js",
   "jspm": {
     "registry": "npm",
     "format": "es6"
