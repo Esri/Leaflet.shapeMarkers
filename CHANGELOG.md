@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+
+### Fixed
+* incorrect release script link in `package.json`
+
 ## [1.0.0] - 2015-09-09
 First Release!
 

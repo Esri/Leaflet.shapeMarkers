@@ -44,7 +44,7 @@
   "scripts": {
     "prebuild": "mkdirp dist",
     "build": "./scripts/build.js",
-    "release": "./scripts/release.js",
+    "release": "./scripts/release.sh",
     "lint": "semistandard src/*.js",
     "test": "npm run lint && karma start"
   }
