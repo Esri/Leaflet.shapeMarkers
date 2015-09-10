@@ -9,7 +9,7 @@ Take a look at the [live demo](http://esri.github.io/Leaflet.shapeMarkers/).
 ![Example Image](https://raw.github.com/Esri/Leaflet.shapeMarkers/master/example.png)
 
 ```js
-L.ShapeMarkers.xMarker([45.5052, -122.6917], 50).addTo(map)
+L.shapeMarkers.xMarker([45.5052, -122.6917], 50).addTo(map)
 ```
 **Leaflet.shapeMarkers targets Leaflet 1.0.x**
 
