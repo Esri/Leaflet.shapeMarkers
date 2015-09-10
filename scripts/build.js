@@ -19,7 +19,7 @@ rollup({
     format: 'umd',
     sourceMap: true,
     sourceMapFile: pkg.name + '.js',
-    moduleName: 'L.ShapeMarkers'
+    moduleName: 'L.shapeMarkers'
   });
 
   var sourceMap = UglifyJS.SourceMap({

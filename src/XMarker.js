@@ -1,22 +1,22 @@
-import L from 'leaflet'
-import { ShapeMarker } from './shapeMarker'
+import L from 'leaflet';
+import { ShapeMarker } from './shapeMarker';
 
 export var XMarker = ShapeMarker.extend({
 
-  initialize: function(latlng, size, options){
+  initialize: function (latlng, size, options) {
     ShapeMarker.prototype.initialize.call(this, latlng, size, options);
   },
 
-  _updatePath: function(){
+  _updatePath: function () {
     this._renderer._updateXMarker(this);
   },
 
   _svgCanvasIncludes: function () {
     L.Canvas.include({
-      _updateXMarker: function(layer){
-        var latlng = layer._point,
-        offset = layer._size / 2.0,
-        ctx = this._ctx;
+      _updateXMarker: function (layer) {
+        var latlng = layer._point;
+        var offset = layer._size / 2.0;
+        var ctx = this._ctx;
 
         ctx.beginPath();
 
@@ -27,11 +27,11 @@ export var XMarker = ShapeMarker.extend({
     });
 
     L.SVG.include({
-      _updateXMarker: function(layer){
-        var latlng = layer._point,
-        offset = layer._size / 2.0;
+      _updateXMarker: function (layer) {
+        var latlng = layer._point;
+        var offset = layer._size / 2.0;
 
-        if(L.Browser.vml){
+        if (L.Browser.vml) {
           latlng._round();
           offset = Math.round(offset);
         }
@@ -47,7 +47,7 @@ export var XMarker = ShapeMarker.extend({
   }
 });
 
-export var xMarker = function(latlng, size, options){
+export var xMarker = function (latlng, size, options) {
   return new XMarker(latlng, size, options);
 };
 
