@@ -1,25 +1,25 @@
-import L from 'leaflet'
-import { ShapeMarker } from './shapeMarker'
+import L from 'leaflet';
+import { ShapeMarker } from './shapeMarker';
 
 export var DiamondMarker = ShapeMarker.extend({
   options: {
     fill: true
   },
 
-  initialize: function(latlng, size, options){
+  initialize: function (latlng, size, options) {
     ShapeMarker.prototype.initialize.call(this, latlng, size, options);
   },
 
-  _updatePath: function(){
+  _updatePath: function () {
     this._renderer._updateDiamondMarker(this);
   },
 
   _svgCanvasIncludes: function () {
     L.Canvas.include({
-      _updateDiamondMarker: function(layer){
-        var latlng = layer._point,
-        offset = layer._size / 2.0,
-        ctx = this._ctx;
+      _updateDiamondMarker: function (layer) {
+        var latlng = layer._point;
+        var offset = layer._size / 2.0;
+        var ctx = this._ctx;
 
         ctx.beginPath();
 
@@ -35,11 +35,11 @@ export var DiamondMarker = ShapeMarker.extend({
     });
 
     L.SVG.include({
-      _updateDiamondMarker: function(layer){
-        var latlng = layer._point,
-        offset = layer._size / 2.0;
+      _updateDiamondMarker: function (layer) {
+        var latlng = layer._point;
+        var offset = layer._size / 2.0;
 
-        if(L.Browser.vml){
+        if (L.Browser.vml) {
           latlng._round();
           offset = Math.round(offset);
         }
@@ -49,7 +49,7 @@ export var DiamondMarker = ShapeMarker.extend({
           'L' + latlng.x + ',' + (latlng.y - offset) +
           'L' + (latlng.x + offset) + ',' + latlng.y;
 
-        str =  str + (L.Browser.svg ? 'z' : 'x');
+        str = str + (L.Browser.svg ? 'z' : 'x');
 
         this._setPath(layer, str);
       }
@@ -57,7 +57,7 @@ export var DiamondMarker = ShapeMarker.extend({
   }
 });
 
-export var diamondMarker = function(latlng, size, options){
+export var diamondMarker = function (latlng, size, options) {
   return new DiamondMarker(latlng, size, options);
 };
 

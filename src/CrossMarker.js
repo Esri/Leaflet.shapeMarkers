@@ -1,22 +1,22 @@
-import L from 'leaflet'
-import { ShapeMarker } from './shapeMarker'
+import L from 'leaflet';
+import { ShapeMarker } from './shapeMarker';
 
 export var CrossMarker = ShapeMarker.extend({
 
-  initialize: function (latlng, size, options){
+  initialize: function (latlng, size, options) {
     ShapeMarker.prototype.initialize.call(this, latlng, size, options);
   },
 
-  _updatePath: function(){
+  _updatePath: function () {
     this._renderer._updateCrossMarker(this);
   },
 
-  _svgCanvasIncludes: function(){
+  _svgCanvasIncludes: function () {
     L.Canvas.include({
-      _updateCrossMarker: function(layer){
-        var latlng = layer._point,
-        offset = layer._size / 2.0,
-        ctx = this._ctx;
+      _updateCrossMarker: function (layer) {
+        var latlng = layer._point;
+        var offset = layer._size / 2.0;
+        var ctx = this._ctx;
 
         ctx.beginPath();
         ctx.moveTo(latlng.x, latlng.y + offset);
@@ -30,16 +30,16 @@ export var CrossMarker = ShapeMarker.extend({
     });
 
     L.SVG.include({
-      _updateCrossMarker: function(layer){
-        var latlng = layer._point,
-        offset = layer._size / 2.0;
+      _updateCrossMarker: function (layer) {
+        var latlng = layer._point;
+        var offset = layer._size / 2.0;
 
-        if(L.Browser.vml){
+        if (L.Browser.vml) {
           latlng._round();
           offset = Math.round(offset);
         }
 
-        var str =  'M' + latlng.x + ',' + (latlng.y + offset) +
+        var str = 'M' + latlng.x + ',' + (latlng.y + offset) +
           'L' + latlng.x + ',' + (latlng.y - offset) +
           'M' + (latlng.x - offset) + ',' + latlng.y +
           'L' + (latlng.x + offset) + ',' + latlng.y;
@@ -50,7 +50,7 @@ export var CrossMarker = ShapeMarker.extend({
   }
 });
 
-export var crossMarker = function(latlng, size, options){
+export var crossMarker = function (latlng, size, options) {
   return new CrossMarker(latlng, size, options);
 };
 
