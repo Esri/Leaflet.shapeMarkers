@@ -1,3 +1,4 @@
+/* global describe it expect beforeEach L */
 describe('XMarker', function () {
   describe('#_size', function () {
     var map;
