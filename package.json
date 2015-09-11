@@ -1,7 +1,7 @@
 {
   "name": "leaflet-shape-markers",
   "description": "Shape markers of fixed size for point symbols",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Rachel Nehmer <rnehmer@esri.com>",
   "bugs": {
     "url": "https://github.com/Esri/Leaflet.shapeMarkers/issues"

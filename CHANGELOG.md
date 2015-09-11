@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.4] - 2015-09-11
+
+### Added
+* `.travis.yml` file to use Travis CI with this repository
+
+### Fixed
+* an issue importing using the wrong case for filename
+
 ## [1.0.3] - 2015-09-10
 
 ### Added
@@ -23,7 +31,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.0] - 2015-09-09
 First Release!
 
-[Unreleased]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.4...HEAD
+[1.0.4]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.0...v1.0.1
