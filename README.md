@@ -1,6 +1,8 @@
 # Leaflet.shapeMarkers
 
-[Leaflet] (http://leafletjs.com) plugin to draw simple shape markers of fixed width.
+> [Leaflet](http://leafletjs.com) plugin to draw simple shape markers of fixed width.
+
+[![travis](https://img.shields.io/travis/Esri/Leaflet.shapeMarkers/master.svg?style=flat-square)](https://travis-ci.org/Esri/Leaflet.shapeMarkers)
 
 ### Example
 
