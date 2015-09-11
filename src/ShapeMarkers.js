@@ -1,4 +1,4 @@
-export var VERSION = '1.0.0';
+export var VERSION = '1.0.3';
 
 export { crossMarker } from './CrossMarker.js';
 export { xMarker } from './XMarker.js';

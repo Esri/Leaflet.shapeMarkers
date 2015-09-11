@@ -1,5 +1,5 @@
 import L from 'leaflet';
-import { ShapeMarker } from './shapeMarker';
+import { ShapeMarker } from './ShapeMarker';
 
 export var CrossMarker = ShapeMarker.extend({
 
