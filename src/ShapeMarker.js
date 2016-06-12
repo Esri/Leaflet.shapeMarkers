@@ -9,6 +9,13 @@ export var ShapeMarker = L.Path.extend({
     this._svgCanvasIncludes();
   },
 
+  toGeoJSON: function () {
+    return L.GeoJSON.getFeature(this, {
+      type: 'Point',
+      coordinates: L.GeoJSON.latLngToCoords(this.getLatLng())
+    });
+  },
+
   _svgCanvasIncludes: function () {
     // implement in sub class
   },
