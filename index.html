@@ -6,11 +6,11 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
     <!-- Load Leaflet from CDN-->
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-1.0.0-b1/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-1.0.0-b1/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/leaflet/1.0.0-rc.1/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/leaflet/1.0.0-rc.1/leaflet-src.js"></script>
 
     <!-- Load shapeMarkers from CDN -->
-    <script src="//cdn.jsdelivr.net/leaflet.shapemarkers/1.0.4/leaflet-shape-markers.js"></script>
+    <script src="https://cdn.jsdelivr.net/leaflet.shapemarkers/1.0.4/leaflet-shape-markers.js"></script>
 
     <style>
       body {margin:0;padding:0;}
@@ -26,18 +26,18 @@
 
       L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(map)
+      }).addTo(map);
 
-      L.shapeMarkers.xMarker([45.5052, -122.6917], 50).addTo(map)
+      L.shapeMarkers.xMarker([45.5052, -122.6917], 50).addTo(map);
 
       L.shapeMarkers.crossMarker([45.5470, -122.6984], 50, {
         color: 'red'
-      }).addTo(map)
+      }).addTo(map);
 
       L.shapeMarkers.squareMarker([45.4952, -122.6450], 50, {
         weight: 10,
         color: 'green'
-      }).addTo(map)
+      }).addTo(map);
     </script>
 
   </body>
