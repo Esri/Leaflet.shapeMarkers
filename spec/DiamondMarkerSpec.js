@@ -21,7 +21,6 @@ describe('DiamondMarker', function () {
           expect(marker.getSize()).to.eq(15);
         });
       });
-
       describe('and size is set after adding it', function () {
         it('takes that size', function () {
           var marker = L.shapeMarkers.diamondMarker([0, 0], 20);
@@ -30,7 +29,6 @@ describe('DiamondMarker', function () {
           expect(marker.getSize()).to.eq(15);
         });
       });
-
       describe('and center is set before adding it', function () {
         it('takes that center', function () {
           var marker = L.shapeMarkers.diamondMarker([0, 0], 20);
@@ -47,6 +45,17 @@ describe('DiamondMarker', function () {
           marker.setLatLng(L.latLng(44, -128));
           expect(marker.getLatLng().lat).to.eq(44);
           expect(marker.getLatLng().lng).to.eq(-128);
+        });
+      });
+      describe('and export geojson', function () {
+        it('using the built in method', function () {
+          var marker = L.shapeMarkers.diamondMarker([0, 0], 20);
+          marker.addTo(map);
+          marker.setLatLng(L.latLng(44, -128));
+          var geojson = marker.toGeoJSON()
+          expect(geojson.type).to.eq('Feature');
+          expect(geojson.geometry.coordinates[0]).to.eq(-128);
+          expect(geojson.geometry.coordinates[1]).to.eq(44);
         });
       });
     });

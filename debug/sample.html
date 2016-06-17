@@ -29,13 +29,13 @@
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map)
 
-      L.shapeMarkers.xMarker([45.505264141298525, -122.691707611084], 50).addTo(map)
+      var x = L.shapeMarkers.xMarker([45.505264141298525, -122.691707611084], 50).addTo(map)
 
-      L.shapeMarkers.crossMarker([45.5469954685617, -122.69840240478517], 50, {
+      var cross = L.shapeMarkers.crossMarker([45.5469954685617, -122.69840240478517], 50, {
         color: 'red'
       }).addTo(map)
 
-      L.shapeMarkers.squareMarker([45.49515737901887, -122.6450157165], 50, {
+      var square = L.shapeMarkers.squareMarker([45.49515737901887, -122.6450157165], 50, {
         weight: 10,
         color: 'green'
       }).addTo(map)

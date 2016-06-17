@@ -49,6 +49,17 @@ describe('SquareMarker', function () {
           expect(marker.getLatLng().lng).to.eq(-128);
         });
       });
+      describe('and export geojson', function () {
+        it('using the built in method', function () {
+          var marker = L.shapeMarkers.squareMarker([0, 0], 20);
+          marker.addTo(map);
+          marker.setLatLng(L.latLng(44, -128));
+          var geojson = marker.toGeoJSON()
+          expect(geojson.type).to.eq('Feature');
+          expect(geojson.geometry.coordinates[0]).to.eq(-128);
+          expect(geojson.geometry.coordinates[1]).to.eq(44);
+        });
+      });
     });
   });
 });
