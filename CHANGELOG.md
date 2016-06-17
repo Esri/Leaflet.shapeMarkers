@@ -36,7 +36,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.0] - 2015-09-09
 First Release!
 
-[Unreleased]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.4...HEAD
+[Unreleased]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.5...HEAD
+[1.0.5]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.4...v1.0.5
 [1.0.4]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.1...v1.0.2
