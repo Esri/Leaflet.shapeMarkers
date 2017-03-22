@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.6] - 2017-03-22
+
+### Fixed
+
+* ensure `pkg.main` points at built library, not raw ES6 source.
+
 ## [1.0.5] - 2016-06-14
 
 ### Added
@@ -36,7 +42,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.0] - 2015-09-09
 First Release!
 
-[Unreleased]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.5...HEAD
+[Unreleased]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.6...HEAD
+[1.0.6]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.5...v1.0.6
 [1.0.5]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.4...v1.0.5
 [1.0.4]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.2...v1.0.3

@@ -1,6 +1,6 @@
 # Leaflet.shapeMarkers
 
-> [Leaflet](http://leafletjs.com) plugin to draw simple shape markers of fixed width.
+> [Leaflet](http://leafletjs.com) plugin to draw simple shape markers with fixed width.
 
 [![travis](https://img.shields.io/travis/Esri/Leaflet.shapeMarkers/master.svg?style=flat-square)](https://travis-ci.org/Esri/Leaflet.shapeMarkers)
 
@@ -13,7 +13,7 @@ Take a look at the [live demo](http://esri.github.io/Leaflet.shapeMarkers/).
 ```js
 L.shapeMarkers.xMarker([45.5052, -122.6917], 50).addTo(map)
 ```
-**Leaflet.shapeMarkers targets Leaflet 1.0.x**
+**Leaflet.shapeMarkers targets `v1.x`
 
 ### Dependencies
 
@@ -49,7 +49,7 @@ Esri welcomes contributions from anyone and everyone. Please see our [guidelines
 
 
 ### Licensing
-Copyright 2015 Esri
+Copyright 2017 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -63,7 +63,4 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-A copy of the license is available in the repository's [license.txt](https://raw.githubusercontent.com/Esri/Leaflet.shapeMarkers/master/LICENSE) file.
-
-[](Esri Tags: ArcGIS Web Mapping Leaflet)
-[](Esri Language: JavaScript)
+A copy of the license is available in the repository's [LICENSE](https://raw.githubusercontent.com/Esri/Leaflet.shapeMarkers/master/LICENSE) file.
