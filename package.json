@@ -32,6 +32,7 @@
     "watch": "^0.17.1"
   },
   "homepage": "http://github.com/Esri/Leaflet.shapeMarkers",
+  "module": "src/ShapeMarkers.js",
   "jsnext:main": "src/ShapeMarkers.js",
   "jspm": {
     "registry": "npm",
@@ -39,7 +40,7 @@
   },
   "keywords": ["Leaflet", "GIS", "Esri"],
   "license": "Apache-2.0",
-  "main": "src/ShapeMarkers.js",
+  "main": "dist/leaflet-shape-markers.js",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
