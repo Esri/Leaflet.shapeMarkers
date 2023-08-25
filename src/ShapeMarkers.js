@@ -1,4 +1,6 @@
-export {version as VERSION} from '../package.json';
+import packageInfo from '../package.json';
+var version = packageInfo.version;
+export { version as VERSION };
 
 export { crossMarker } from './CrossMarker';
 export { xMarker } from './XMarker';
