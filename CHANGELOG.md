@@ -1,48 +1,66 @@
 # Change Log
+
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
+
+## [Unreleased]
+
+## [1.0.7] - 2023-08-25
+
+### Fixed
+
+- issue with import when using webpack 5 ([#27](https://github.com/Esri/Leaflet.shapeMarkers/pull/27))
 
 ## [1.0.6] - 2017-03-22
 
 ### Fixed
 
-* ensure `pkg.main` points at built library, not raw ES6 source.
+- ensure `pkg.main` points at built library, not raw ES6 source.
 
 ## [1.0.5] - 2016-06-14
 
 ### Added
-* `toGeoJSON()` method accessible to all individual markers.
+
+- `toGeoJSON()` method accessible to all individual markers.
 
 ## [1.0.4] - 2015-09-11
 
 ### Added
-* `.travis.yml` file to use Travis CI with this repository
+
+- `.travis.yml` file to use Travis CI with this repository
 
 ### Fixed
-* an issue importing using the wrong case for filename
+
+- an issue importing using the wrong case for filename
 
 ## [1.0.3] - 2015-09-10
 
 ### Added
-* `.npmignore` file to ensure built output is included in published npm package.
+
+- `.npmignore` file to ensure built output is included in published npm package.
 
 ## [1.0.2] - 2015-09-10
 
 ### Added
-* nothing.  just trying to resolve problems publishing to npm
+
+- nothing. just trying to resolve problems publishing to npm
 
 ## [1.0.1] - 2015-09-10
 
 ### Added
-* missing script in `package.json` to ensure `npm install` lays down built files
+
+- missing script in `package.json` to ensure `npm install` lays down built files
 
 ### Fixed
-* incorrect release script link in `package.json`
+
+- incorrect release script link in `package.json`
 
 ## [1.0.0] - 2015-09-09
+
 First Release!
 
-[Unreleased]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.6...HEAD
+[Unreleased]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.7...HEAD
+[1.0.7]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.6...v1.0.7
 [1.0.6]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.5...v1.0.6
 [1.0.5]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.4...v1.0.5
 [1.0.4]: https://github.com/Esri/Leaflet.shapeMarkers/compare/v1.0.3...v1.0.4
